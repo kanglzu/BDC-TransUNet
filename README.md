@@ -92,7 +92,7 @@ Pretrained BDC-TransUNet weights are available for download:
 Download the weights and test with:
 
 ```bash
-python test.py --dataset GLAS --model_path ./pretrained_models/best_GLAS.pth
+python test.py --dataset GLAS --model_path ./pretrained_models/best_model_glas.pth
 ```
 
 ## Reference
