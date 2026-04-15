@@ -1,0 +1,64 @@
+# BDC-TransUNet Default Configuration
+
+# Model Architecture
+model:
+  encoder_type: bskan          # mlp, kan, bskan
+  attention_type: dsda         # none, se, dsda
+  upsample_type: converse      # bilinear, converse, deconv
+  
+  # BSKAN parameters
+  grid_size: 3
+  spline_order: 2
+  boundary_threshold: 0.3
+  
+  # Decoder parameters
+  da_reduction: 16
+  enhance_layers: [0, 1, 2]
+  
+  # ViT parameters
+  vit_name: R50-ViT-B_16
+  img_size: 224
+  n_skip: 3
+  vit_patches_size: 16
+
+# Training
+training:
+  max_epochs: 200
+  batch_size: 6
+  accumulation_steps: 2
+  base_lr: 0.01
+  weight_decay: 0.001
+  momentum: 0.9
+  
+  # Learning rate scheduler
+  lr_scheduler: poly           # poly, cosine, warmup_cosine
+  warmup_epochs: 5
+  min_lr: 1.0e-6
+  
+  # Loss function
+  loss_type: dice_ce           # dice, ce, dice_ce
+  dice_weight: 0.5
+  ce_weight: 0.5
+  
+  # Deep supervision
+  ds_weight: 0.4
+  
+  # Mixed precision
+  use_amp: false
+
+# Dataset
+dataset:
+  name: GLAS                   # GLAS, CVC, Kvasir
+  num_classes: 2
+  num_workers: 4
+
+# Paths
+paths:
+  data_root: ./data
+  output_dir: ./output
+  pretrained_path: ./pretrained_models/R50+ViT-B_16.npz
+
+# Other
+seed: 0
+deterministic: true
+n_gpu: 1

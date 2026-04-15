@@ -1,0 +1,34 @@
+# Pretrained weights
+pretrained_models/
+*.npz
+*.pth
+
+# Data
+data/
+
+# Training outputs
+output/
+*/log/
+*/log.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
