@@ -7,7 +7,7 @@ BDC-TransUNet requires datasets to be preprocessed into `.npz` format with `imag
 ### GlaS (Gland Segmentation Challenge)
 
 - **Paper**: K. Sirinukunwattana et al., "Gland segmentation in colon histology images: The GlaS challenge contest," *Medical Image Analysis*, vol. 35, pp. 489–502, 2017.
-- **Download**: https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation
+- **Download**: https://websignon.warwick.ac.uk/origin/slogin?shire=https%3A%2F%2Fwarwick.ac.uk%2Fsitebuilder2%2Fshire-read&providerId=urn%3Awarwick.ac.uk%3Asitebuilder2%3Aread%3Aservice&target=https%3A%2F%2Fwarwick.ac.uk%2Ffac%2Fcross_fac%2Ftia%2Fdata%2Fglascontest&status=notloggedin
 - **Task**: Gland segmentation in H&E stained histology images
 - **Split**: 115 train / 24 val / 26 test
 
