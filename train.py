@@ -99,7 +99,7 @@ def get_args():
                         help='Weight for CE loss in dice_ce')
 
     # Misc
-    parser.add_argument('--seed', type=int, default=0,
+    parser.add_argument('--seed', type=int, default=1234,
                         help='Random seed')
     parser.add_argument('--deterministic', type=int, default=1,
                         help='Whether to use deterministic training')
