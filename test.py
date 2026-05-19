@@ -21,7 +21,7 @@ from utils.metrics import calculate_metrics_comprehensive
 from networks import BDCTransUNet, CONFIGS
 
 
-def set_deterministic(seed=42):
+def set_deterministic(seed=1234):
     """Set deterministic computation for reproducible testing."""
     random.seed(seed)
     np.random.seed(seed)
