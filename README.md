@@ -85,9 +85,9 @@ Pretrained BDC-TransUNet weights are available for download:
 
 | Dataset | Download |
 |---------|----------|
-| CVC-ClinicDB | [Google Drive](https://drive.google.com/file/d/1dy3-HNwkHrMWJkcL773nGPB6Aga4vL_Z/view?usp=drive_link) |
-| GlaS | [Google Drive](https://drive.google.com/file/d/1Tpo7LlMpspC1YRsUnXOYRav-WYVDTNMA/view?usp=drive_link) |
-| Kvasir-SEG | [Google Drive](https://drive.google.com/file/d/1euWLRZaJ0F3i8-HJJmrfpbjMHPuvG06x/view?usp=drive_link) |
+| CVC-ClinicDB | [Google Drive](https://drive.google.com/file/d/13mbytlnD1C-ZmiLoVQC6E4imsMk9Zc2q/view?usp=drive_link) |
+| GlaS | [Google Drive](https://drive.google.com/file/d/1d_VWFckq5ksIFIoOCXU1DG5Irua_1QUm/view?usp=drive_link) |
+| Kvasir-SEG | [Google Drive](https://drive.google.com/file/d/1p9XH3tWtUHNYIC8gTdXnGWTvx0ALptKC/view?usp=drive_link) |
 
 Download the weights and test with:
 
