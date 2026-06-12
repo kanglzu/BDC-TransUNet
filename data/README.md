@@ -101,27 +101,3 @@ mask_array = (mask_array > 0).astype(np.uint8)
 # Save
 np.savez_compressed("case00000.npz", image=img_array, label=mask_array)
 ```
-
-### Mask Naming Convention
-
-For CVC / Kvasir (image + mask pairs):
-- Mask file name is image name with `_mask` suffix: `image_1.png` → `image_1_mask.png`
-
-For GLAS (single mask per image):
-- Mask file name matches image file name exactly.
-
-### Lists Files (optional)
-
-If your training script requires a file list, generate `lists/` under the project root:
-
-```
-lists/
-├── lists_glas/
-│   ├── train.txt   # contains "case00000", "case00001", ...
-│   ├── val.txt
-│   └── test.txt
-├── lists_cvc/
-│   └── ...
-└── lists_kvasir/
-    └── ...
-```
