@@ -31,7 +31,7 @@ The expected directory structure:
 
 ```
 data/
-├── GLAS/
+├── CVC/
 │   ├── train_npz/
 │   ├── val_npz/
 │   └── test_npz/
@@ -39,7 +39,7 @@ data/
 │   ├── train_npz/
 │   ├── val_npz/
 │   └── test_npz/
-└── CVC/
+└── GLAS/
     ├── train_npz/
     ├── val_npz/
     └── test_npz/
@@ -55,6 +55,12 @@ pip install -r requirements.txt
 
 ### 4. Train/Test
 
+- Train on CVC-ClinicDB dataset:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py --dataset CVC
+```
+
 - Train on GlaS dataset:
 
 ```bash
@@ -67,16 +73,10 @@ CUDA_VISIBLE_DEVICES=0 python train.py --dataset GLAS
 CUDA_VISIBLE_DEVICES=0 python train.py --dataset Kvasir
 ```
 
-- Train on CVC-ClinicDB dataset:
-
-```bash
-CUDA_VISIBLE_DEVICES=0 python train.py --dataset CVC
-```
-
 - Test with pretrained weights:
 
 ```bash
-python test.py --dataset GLAS --model_path ./output/BDC_experiment/best_model.pth
+python test.py --dataset CVC --model_path ./output/BDC_experiment/best_model.pth
 ```
 
 ### 5. Pretrained Models
